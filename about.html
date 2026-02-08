@@ -1,21 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>About - Jean</title>
 </head>
-
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+<body class="about-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Jean</div>
+            <div class="nav-links">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="active"><i class="fas fa-user"></i> About</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </nav>
-    <h1>Get In Touch</h1>
-    <p>Email: jpcnstntn@gmail.com</p>
-</body>
 
+    <main class="container">
+        <section class="about-hero">
+            <h1 class="page-title">About Me</h1>
+            <p class="page-subtitle">Learn more about my journey and expertise</p>
+        </section>
+
+        <section class="about-content">
+            <div class="about-card">
+                <div class="about-image">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="about-text">
+                    <h2>My Story</h2>
+                    <p>I'm a passionate web developer with a keen interest in creating digital solutions that make a difference. My journey began with a curiosity about how websites work, and it has evolved into a career dedicated to building user-friendly, responsive web applications.</p>
+                </div>
+            </div>
+
+            <section class="skills">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <ul>
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>React.js</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>REST APIs</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                        <ul>
+                            <li>Git & GitHub</li>
+                            <li>VS Code</li>
+                            <li>UI/UX Principles</li>
+                            <li>Agile Methodology</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interests">
+                <h2 class="section-title">Interests & Hobbies</h2>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-book"></i>
+                        <span>Continuous Learning</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Digital Art</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Game Development</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 My Portfolio. Built with passion and Git!</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
