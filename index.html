@@ -5,26 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Jean - Portfolio</title>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Jean</div>
+            <div class="nav-links">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html"><i class="fas fa-user"></i> About</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </nav>
-    <h1>Welcome to my portfolio</h1>
-    <h2>Web Developer & Problem Solver</h2>
-    <p>Hi, Im jean</p>
-    <p>Im passionate with web design</p>
-    <p>This portfolio showcases my journey as a web developer and the projects
-        I'm passionate about.</p>
 
-    <footer>
-        <р>&сору; My Portfolio. Built with passion and Git!</p>
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to My Portfolio</h1>
+                <h2 class="hero-subtitle">Web Developer & Problem Solver</h2>
+                <div class="hero-text">
+                    <p class="intro">Hi, I'm <span class="highlight">Jean</span></p>
+                    <p>I'm passionate about creating beautiful, functional web experiences.</p>
+                    <p>This portfolio showcases my journey as a web developer and the projects I'm passionate about.</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#skills" class="btn btn-primary"><i class="fas fa-code"></i> View My Skills</a>
+                    <a href="contact.html" class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar-placeholder">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Express, Databases</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>UI/UX, Responsive Design</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 My Portfolio. Built with passion and Git!</p>
+            <div class="social-links">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
